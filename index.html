@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Air-Mazing Tourism App</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+<body>
+    <body style="background-color:powderblue;">
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title">
+                            Book Your Flight!
+                        </h1>
+                        <div class="box">
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <input class="input" id="city-name" type="text" placeholder="Type a city">
+                                </p>
+                                <p class="control">
+                                    <a class="button is-info">
+                                        Search
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--AIRLINE/FLIGHTS SECTION-->
+            <div class="columns is-mobile">
+            <div class="column" id="airline-card">
+                <h2>Flights:</h2><h3 style="color:red"></h3>
+                <div class="airline-content" style="height: 250px;width: 700px;overflow: scroll;" id="airline-content">
+					<table width="500" border="1" id="dtHorizontalVerticalExample" class="table table-striped header-fixed " cellspacing="0"
+  width="100%">
+  <thead>
+    <tr>
+      <th bgcolor="#bfb2b2">Flight Status</th>
+	  <th bgcolor="#bfb2b2">Flight Date</th>
+	  <th bgcolor="#bfb2b2">Departure Airport</th>
+	  <th bgcolor="#bfb2b2">Arrival Airport</th>
+	  <th bgcolor="#bfb2b2">Airline Name</th>
+	  <th bgcolor="#bfb2b2">Flight Number</th>
+	  <th bgcolor="#bfb2b2">Arrival Time</th>
+	  <th bgcolor="#bfb2b2">Departure Time</th>
+    </tr>
+  </thead>
+  <tbody id="flight-list">
+    
+  </tbody>
+</table>
+</div>
+</div>
+            
+
+<!--WEATHER SECTION-->
+        <div class="column" id="weather-card"> 
+            <h2>Weather:</h2>
+            <div class="weather-content" id="weather-content">
+                <h3 id="city-name"></h3>
+                <img id="current-weather-icon" src="">
+                <p id="temp"></p>
+                <p id="feels-like"></p>
+                <p id="wind-speed"></p>
+            </div>
+        </div>
+
+    <script async type="text/javascript" src="../js/bulma.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
